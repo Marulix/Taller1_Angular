@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+.div-1 {
+  background-color: #00c2b8;
+}
+.bolded{
+  font-weight: bold;
+}
+.blueName{
+  color: #03a8a0;
+}

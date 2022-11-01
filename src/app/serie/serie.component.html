@@ -1,0 +1,40 @@
+<div class = "container-fluid">
+  <div class ="row div-1">
+      <div class ="col-0 p-1">
+      </div>
+      <div class="col-11">
+          <h3>TV Series</h3>
+      </div>
+  </div>
+      <div class ="row">
+          <div class = "col-6 p-5">
+              <table class="table">
+                  <thead>
+                  <tr>
+                      <th>#</th>
+                      <th>Name</th>
+                      <th>Channel</th>
+                      <th>Seasons</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let s of series">
+                      <td class="table-active bolded">
+                        <dd>{{s.id}}</dd>
+                      </td>
+                      <td class="table-active blueName">
+                        <dd>{{s.name}}</dd>
+                      </td>
+                      <td class="table-active">
+                        <dd>{{s.channel}}</dd>
+                      </td>
+                      <td class="table-active">
+                        <dd>{{s.seasons}}</dd>
+                      </td>
+                  </tr>
+                  </tbody>
+              </table>
+              <h6>Seasons average: {{getAvgSeasons()}}</h6>
+          </div>
+      </div>
+  </div>
